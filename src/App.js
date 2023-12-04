@@ -1,6 +1,6 @@
 import React from 'react';
 import "./App.css";
-import withUpperCase from './components/HOC/UpperCase';
+import withUpperCase from './components/HOC/withUpperCase';
 import DisplayText from './components/HOC/DisplayText';
 
 function App() {
