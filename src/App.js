@@ -1,16 +1,14 @@
 import React from "react";
 import "./App.css";
-import { Counter } from "./components/Redux/Counter";
-import { Provider } from "react-redux";
-import { store } from "./components/Redux/store";
+import { MUI } from "./components/MUI/MUI";
 
 function App() {
   const title = "Hello React";
 
   return (
-    <Provider store={store}>
-      <Counter />
-    </Provider>
+    <div className="App">
+      <MUI />
+    </div>
   );
 }
 
