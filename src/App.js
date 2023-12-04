@@ -1,13 +1,18 @@
 import React from "react";
 import "./App.css";
-import { MUI } from "./components/MUI/MUI";
+import Parent from "./components/Hooks/Parent";
+import Provider from "./components/Hooks/Provider";
+import Component from "./components/Hooks/Component";
 
 function App() {
   const title = "Hello React";
 
   return (
     <div className="App">
-      <MUI />
+      <Parent/>
+      {/* <Provider>
+        <Component/>
+      </Provider> */}
     </div>
   );
 }
