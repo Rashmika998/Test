@@ -1,15 +1,18 @@
-import React from "react";
+import {Suspense} from "react";
 import "./App.css";
-import Form from "./components/HookForm/Form";
+import {DataComponent, Loading} from "./components/Suspense/DataComponent";
 
 function App() {
   const title = "Hello React";
 
   return (
-    <div className="App">
-      <Form/>
-    </div>
+    <>
+      <Suspense fallback={<Loading/>}>
+        <DataComponent/>
+      </Suspense>
+    </>
   );
 }
+
 
 export default App;
